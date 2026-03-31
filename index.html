@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Builder</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+<h1>Resume Builder</h1>
+
+<div class="form">
+
+<input type="text" id="name" placeholder="Candidate Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="linkedin" placeholder="LinkedIn URL">
+
+<input type="text" id="github" placeholder="GitHub URL">
+
+<h3>Education</h3>
+
+<input type="text" id="graduation" placeholder="Graduation Details">
+<input type="text" id="intermediate" placeholder="Intermediate Details">
+<input type="text" id="tenth" placeholder="10th Details">
+
+<h3>Technical Skills</h3>
+<textarea id="skills"></textarea>
+
+<h3>Internships</h3>
+<textarea id="internships"></textarea>
+
+<h3>Projects</h3>
+<textarea id="projects"></textarea>
+
+<h3>Certifications</h3>
+<textarea id="certifications"></textarea>
+
+<h3>Achievements</h3>
+<textarea id="achievements"></textarea>
+
+<h3>Leadership</h3>
+<textarea id="leadership"></textarea>
+
+<button onclick="generateResume()">Generate Resume</button>
+<button onclick="downloadPDF()">Download PDF</button>
+
+</div>
+
+<div id="resumeOutput" class="resume"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
